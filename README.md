@@ -7,7 +7,7 @@ docker build -t node_project_container .
 ```
 - Then, run it:
 ```
-docker run -it --volume ${PWD}/app:/app --name=node_project_container --rm node_project_container
+docker run -it -p 3000:3000 --volume ${PWD}/app:/app --name=node_project_container --rm node_project_container
 ```
 
 ## Running on Linux/Mac
